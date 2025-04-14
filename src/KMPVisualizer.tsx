@@ -11,8 +11,8 @@ const CharacterBox: React.FC<CharacterBoxProps> = ({ char, state }) => {
 };
 
 const KMPVisualizer: React.FC = () => {
-  const [text, setText] = useState("ABCDEFG");
-  const [pattern, setPattern] = useState("DEF");
+  const [text, setText] = useState("ABCABABCABCABAB");
+  const [pattern, setPattern] = useState("ABCABCAB");
   const [isRunning, setIsRunning] = useState(false);
   const [lps, setLps] = useState<number[]>([]);
   const [matches, setMatches] = useState<number[]>([]);
