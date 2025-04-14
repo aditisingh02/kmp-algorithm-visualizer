@@ -2,9 +2,9 @@
 
 A visual tool to understand how the Knuth-Morris-Pratt (KMP) string matching algorithm works in real time.
 
-🔗 [Live Demo](https://kmp-algorithm-visualizer.vercel.app/)
+https://github.com/user-attachments/assets/a9f2a101-34f9-4b7b-935f-f807f8130e1c
 
----
+🔗 [KMP Algorithm Visualizer](https://kmp-algorithm-visualizer.vercel.app/)
 
 ## Features
 
@@ -13,7 +13,6 @@ A visual tool to understand how the Knuth-Morris-Pratt (KMP) string matching alg
 - Highlights matches, mismatches, and LPS jumps
 - Clean, interactive UI for better understanding
 
----
 
 ## About KMP
 
@@ -21,21 +20,25 @@ The Knuth-Morris-Pratt (KMP) algorithm is an efficient string matching technique
 
 ---
 
-## Tech Stack
-
 - React
 - Tailwind CSS
-- TypeScript (if used)
-- Deployed on Vercel
+- TypeScript
 
 ---
 
 ## Getting Started
-
 To run the project locally:
 
+### HTTP
 ```bash
 git clone git@github.com:aditisingh02/kmp-algorithm-visualizer.git
+```
+
+### SSH
+```bash
+git clone https://github.com/aditisingh02/kmp-algorithm-visualizer.git
+```
+```bash
 cd kmp-algorithm-visualizer
 npm install
 npm run dev
