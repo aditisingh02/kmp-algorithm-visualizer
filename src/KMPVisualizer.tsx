@@ -18,6 +18,7 @@ const KMPVisualizer: React.FC = () => {
   const [matches, setMatches] = useState<number[]>([]);
   const [currentPosition, setCurrentPosition] = useState(0);
   const [patternPosition, setPatternPosition] = useState(0);
+  const [error, setError] = useState<string | null>(null);
 
   // Compute LPS array
   const computeLPS = (pattern: string): number[] => {
@@ -80,6 +81,11 @@ const KMPVisualizer: React.FC = () => {
   ]);
 
   const handleStartDemo = () => {
+    if (pattern.length > text.length) {
+      setError("Pattern length must be less than or equal to text length");
+      return;
+    }
+    setError(null);
     setIsRunning(true);
     setCurrentPosition(0);
     setPatternPosition(0);
@@ -119,6 +125,7 @@ const KMPVisualizer: React.FC = () => {
         >
           Start Demo
         </button>
+        {error && <div className="error-message">{error}</div>}
       </div>
 
       <div className="input-section">

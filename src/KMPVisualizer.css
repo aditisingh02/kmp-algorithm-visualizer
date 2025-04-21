@@ -9,6 +9,10 @@
 .explanation-section {
   text-align: center;
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .explanation-section h1 {
@@ -237,6 +241,34 @@
 .matches p {
   font-size: 1.125rem;
   color: #4b5563;
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #fef2f2;
+  border: 1px solid #fee2e2;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  margin-top: 0.75rem;
+}
+
+.error-message::before {
+  content: "⚠️";
+  font-size: 1rem;
+}
+
+.input-group.error input {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+}
+
+.input-group.error input:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
 }
 
 @media (max-width: 768px) {
